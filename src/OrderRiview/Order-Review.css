@@ -1,0 +1,16 @@
+.order-container {
+    display: flex;
+}
+
+.cart-container {
+    margin: 0 auto;
+    width: 270px;
+}
+
+.pd-container {
+    margin: 0 auto;
+}
+
+.body {
+    margin-top: 50px;
+}

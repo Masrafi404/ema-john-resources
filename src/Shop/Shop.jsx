@@ -24,10 +24,14 @@ const Shop = () => {
 
                 saveCart.push(addedProduct)
             }
-            console.log(addedProduct)
         }
         setCart(saveCart)
     }, [products])
+
+    const clearHandler = () => {
+        setCart([])
+        deleteShoppingCart();
+    }
 
     const handlerAddtoCart = (product) => {
         const newCart = [...cart, product]
@@ -42,7 +46,12 @@ const Shop = () => {
                 }
             </div>
             <div className='cart-container'>
-                <Cart cart={cart}></Cart>
+                <Cart
+                    cart={cart}
+                    clearHandler={clearHandler}
+                >
+                    <div>Check Order</div>
+                </Cart>
             </div>
         </div>
     );

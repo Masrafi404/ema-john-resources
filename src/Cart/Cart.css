@@ -1,10 +1,32 @@
 .cart-container {
     background-color: #eab676;
-    padding: 25px;
+    padding: 20px;
     position: sticky;
     top: 0;
 }
 
 .cart-container p {
     font-size: 17px;
+}
+
+.btn-clear {
+    background-color: #FF3030;
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.btn-color {
+    background: rgba(255, 153, 0, 1);
+    margin-top: 15px;
+    width: 90%;
+}
+
+.btn-color-link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
 }
